@@ -1,0 +1,44 @@
+ <html>
+ <head>
+	  <title>JS-Assgn5</title>
+ </head>
+ <body>
+     <h2 style="text-align:center">Print the next 20 leap years </h2>
+	 
+	 <center>
+	 <script>
+		var year = window.prompt(" Enter Leap year: ");
+		
+		var counter = 20;
+		
+		calculateLeapYear(year, counter);  // Method Calling
+
+		function calculateLeapYear(year, counter) {
+
+		  while (counter >= 0) {
+
+			// Check Leap Year
+			  if ((year % 4 === 0) && (year % 100 !== 0)||(year % 400 === 0)) {
+
+				  document.write(year + "<br>");
+
+				  year++;
+
+				  counter--;
+			  } 
+			  else {
+				year++;
+			  }   
+
+		   }
+
+		}
+
+	 </script>
+	 </center>
+ </body>
+ </html>
+
+
+	
+	

@@ -1,0 +1,35 @@
+ <html>
+ <head>
+	  <title>JS-Assg4</title>
+ </head>
+
+ <body>
+     <h2 style="text-align:center">Print The Heads Ratio</h2>
+	 <center>
+	 <script>
+		var Noflips = window.prompt("Enter Number of Flips =");
+		var res = headsRatio(Noflips);
+		
+		document.write(res);
+ 
+		function headsRatio(flips) {
+		 
+		 var count = 0, output;
+		 
+		    for(var i=0; i<flips; i++)
+			{
+				if(Math.floor(Math.random() * 2) == 0){
+				   count++;				
+				}
+			}
+		  
+			output = count/flips;
+			return output;
+		}
+	 </script>
+	 </center>
+	 
+ </body>
+ </html>
+	 
+	

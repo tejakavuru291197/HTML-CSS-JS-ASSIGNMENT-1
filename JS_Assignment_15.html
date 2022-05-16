@@ -1,0 +1,39 @@
+ <html>
+ <head>
+	  <title>Js-Assgn15</title>
+ </head>
+
+ <body>
+     <h2 style="text-align:center">Bubble Sort Using Array</h2>
+	 <center>
+	 <script>
+	 		
+		 var arr = [10, 15, 11, 18, 16, 26, 2, 6, 4, 17];
+		 
+		 document.write("Array is : " + arr + "<br>");
+		 
+		 bubbleSort(arr);
+		 
+		 document.write("Array Sort using bubble sort is : " + arr);
+		 
+		 function bubbleSort(arr){
+     
+		   for(var i = 0; i < arr.length; i++){
+		     for(var j = 0; j < ( arr.length - i -1 ); j++){
+ 
+				if(arr[j] > arr[j+1]){
+					var temp = arr[j]
+					arr[j] = arr[j + 1]
+					arr[j+1] = temp
+				}
+			}
+		   }
+		  }
+		
+	 </script>
+	 </center>
+	 
+ </body>
+ </html>
+	 
+	
